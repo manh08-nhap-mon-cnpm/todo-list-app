@@ -37,3 +37,23 @@ if __name__ == "__main__":
     list_tasks()
     complete_task(0)  # đánh dấu công việc đầu tiên là hoàn thành
     list_tasks()
+def delete_task(task_index):
+    if 0 <= task_index < len(tasks):
+        removed_task = tasks.pop(task_index)
+        print(f"Đã xóa công việc: {removed_task['name']}")
+    else:
+        print("Chỉ số công việc không hợp lệ.")
+
+if __name__ == "__main__":
+    add_task("Học bài Git")
+    add_task("Làm bài tập")
+    add_task("Đi ngủ")
+    list_tasks()
+
+    print("\n--- Đánh dấu hoàn thành ---")
+    complete_task(1)
+    list_tasks()
+
+    print("\n--- Xóa công việc ---")
+    delete_task(0)
+    list_tasks()
