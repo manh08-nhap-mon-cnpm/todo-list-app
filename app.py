@@ -27,6 +27,6 @@ if \_\_name\_\_ == "\_\_main\_\_":
 &nbsp;   add\_task("Học bài Git và GitHub")
 
 &nbsp;   add\_task("Làm bài tập thực hành ở nhà")
-
+  list_tasks()
 
 
